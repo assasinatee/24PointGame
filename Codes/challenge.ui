@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>challenge</class>
+ <widget class="QWidget" name="challenge">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>挑战模式</string>
+  </property>
+  <widget class="QPushButton" name="breakButton">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>120</y>
+     <width>191</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#breakButton{
+	background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(14, 8, 73, 255), stop:0.679775 rgba(17, 137, 145, 255), stop:1 rgba(126, 14, 81, 255));
+	border-radius:10px;
+	color:white;
+}
+
+#breakButton:hover{
+	background-color:rgb(44, 54, 148);
+	border-radius:10px;
+}
+
+#breakButton::pressed{
+	background-color:rgb(26, 23, 116);
+	border-radius:10px;
+}</string>
+   </property>
+   <property name="text">
+    <string>闯关模式</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="timingButton">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>310</y>
+     <width>191</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#timingButton{
+	background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(14, 8, 73, 255), stop:0.679775 rgba(17, 137, 145, 255), stop:1 rgba(126, 14, 81, 255));
+	border-radius:10px;
+	color:white;
+}
+
+#timingButton:hover{
+	background-color:rgb(44, 54, 148);
+	border-radius:10px;
+}
+
+#timingButton::pressed{
+	background-color:rgb(26, 23, 116);
+	border-radius:10px;
+}</string>
+   </property>
+   <property name="text">
+    <string>计时挑战模式</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="retButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::ActionsContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#retButton{
+	background-color:rgb(156, 156, 156);
+	border-radius:10px;
+}
+
+#retButton:hover{
+	background-color:rgb(107, 107, 107);
+	border-radius:10px;
+}
+
+#retButton::pressed{
+	background-color:rgb(50, 50, 50);
+	border-radius:10px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>←</string>
+   </property>
+  </widget>
+  <zorder>timingButton</zorder>
+  <zorder>breakButton</zorder>
+  <zorder>retButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pokers</class>
+ <widget class="QWidget" name="pokers">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>挑战模式</string>
+  </property>
+  <widget class="QLabel" name="label1">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>281</y>
+     <width>105</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>105</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>105</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label2">
+   <property name="geometry">
+    <rect>
+     <x>142</x>
+     <y>281</y>
+     <width>105</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>105</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>105</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label3">
+   <property name="geometry">
+    <rect>
+     <x>253</x>
+     <y>281</y>
+     <width>105</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>105</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>105</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label4">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>281</y>
+     <width>105</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>105</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>105</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>240</y>
+     <width>351</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>25</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label{
+	color:rgb(213, 213, 213);
+}</string>
+   </property>
+   <property name="text">
+    <string>这一关抽取到的数字是：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="retButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>469</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#retButton{
+	background-color:rgb(156, 156, 156);
+	border-radius:10px;
+}
+
+#retButton:hover{
+	background-color:rgb(107, 107, 107);
+	border-radius:10px;
+}
+
+#retButton::pressed{
+	background-color:rgb(50, 50, 50);
+	border-radius:10px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>←</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="refreshButton">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>410</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#refreshButton{
+	background-color:rgb(199, 199, 199);
+	border-radius:20px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/arrow1.jpg</normaloff>../images/arrow1.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>25</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcdNumber">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>111</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="mode">
+    <enum>QLCDNumber::Dec</enum>
+   </property>
+   <property name="segmentStyle">
+    <enum>QLCDNumber::Flat</enum>
+   </property>
+   <property name="value" stdset="0">
+    <double>0.300000000000000</double>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="answerButton">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>10</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#answerButton{
+	background-color:rgb(156, 156, 156);
+	border-radius:10px;
+}
+
+#answerButton:hover{
+	background-color:rgb(107, 107, 107);
+	border-radius:10px;
+}
+
+#answerButton::pressed{
+	background-color:rgb(50, 50, 50);
+	border-radius:10px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>看答案</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="firstButton">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>311</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#firstButton{
+	background-color:rgb(156, 156, 156);
+}
+
+#firstButton:hover{
+	background-color:rgb(107, 107, 107);
+}
+
+#firstButton::pressed{
+	background-color:rgb(50, 50, 50);
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="secondButton">
+   <property name="geometry">
+    <rect>
+     <x>139</x>
+     <y>311</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#secondButton{
+	background-color:rgb(156, 156, 156);
+}
+
+#secondButton:hover{
+	background-color:rgb(107, 107, 107);
+}
+
+#secondButton::pressed{
+	background-color:rgb(50, 50, 50);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="thirdButton">
+   <property name="geometry">
+    <rect>
+     <x>261</x>
+     <y>311</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#thirdButton{
+	background-color:rgb(156, 156, 156);
+}
+
+#thirdButton:hover{
+	background-color:rgb(107, 107, 107);
+}
+
+#thirdButton::pressed{
+	background-color:rgb(50, 50, 50);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="fourthButton">
+   <property name="geometry">
+    <rect>
+     <x>383</x>
+     <y>311</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#fourthButton{
+	background-color:rgb(156, 156, 156);
+}
+
+#fourthButton:hover{
+	background-color:rgb(107, 107, 107);
+}
+
+#fourthButton::pressed{
+	background-color:rgb(50, 50, 50);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>70</y>
+     <width>341</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>100</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_2{
+	color:rgb(213, 213, 213);
+}</string>
+   </property>
+   <property name="text">
+    <string>第1关</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>250</y>
+     <width>371</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_3{
+	color:rgb(213, 213, 213);
+}</string>
+   </property>
+   <property name="text">
+    <string>这一关你有120秒的时间完成</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addButton">
+   <property name="geometry">
+    <rect>
+     <x>61</x>
+     <y>302</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#addButton{
+	background-color:rgb(199, 199, 199);
+}
+
+#addButton:hover{
+	background-color:rgb(107, 107, 107);
+}
+
+#addButton::pressed{
+	background-color:rgb(50, 50, 50);
+}</string>
+   </property>
+   <property name="text">
+    <string>+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="plusButton">
+   <property name="geometry">
+    <rect>
+     <x>273</x>
+     <y>302</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>25</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#plusButton{
+	background-color:rgb(199, 199, 199);
+}
+
+#plusButton:hover{
+	background-color:rgb(107, 107, 107);
+}
+
+#plusButton::pressed{
+	background-color:rgb(50, 50, 50);
+}</string>
+   </property>
+   <property name="text">
+    <string>×</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="divButton">
+   <property name="geometry">
+    <rect>
+     <x>379</x>
+     <y>302</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>25</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#divButton{
+	background-color:rgb(199, 199, 199);
+}
+
+#divButton:hover{
+	background-color:rgb(107, 107, 107);
+}
+
+#divButton::pressed{
+	background-color:rgb(50, 50, 50);
+}</string>
+   </property>
+   <property name="text">
+    <string>÷</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="subButton">
+   <property name="geometry">
+    <rect>
+     <x>167</x>
+     <y>302</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#subButton{
+	background-color:rgb(199, 199, 199);
+}
+
+#subButton:hover{
+	background-color:rgb(107, 107, 107);
+}
+
+#subButton::pressed{
+	background-color:rgb(50, 50, 50);
+}</string>
+   </property>
+   <property name="text">
+    <string>—</string>
+   </property>
+  </widget>
+  <zorder>thirdButton</zorder>
+  <zorder>label3</zorder>
+  <zorder>secondButton</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label2</zorder>
+  <zorder>addButton</zorder>
+  <zorder>plusButton</zorder>
+  <zorder>divButton</zorder>
+  <zorder>subButton</zorder>
+  <zorder>firstButton</zorder>
+  <zorder>fourthButton</zorder>
+  <zorder>label4</zorder>
+  <zorder>label1</zorder>
+  <zorder>retButton</zorder>
+  <zorder>label</zorder>
+  <zorder>refreshButton</zorder>
+  <zorder>lcdNumber</zorder>
+  <zorder>answerButton</zorder>
+  <zorder>label_2</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
